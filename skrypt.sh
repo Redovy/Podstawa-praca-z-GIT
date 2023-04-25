@@ -25,6 +25,13 @@ while [ $# -gt 0 ]; do
             fi
             exit 0
             ;;
+        --help)
+            echo "Aby użyć skryptu wybrane flagi:"
+            echo "--date - dzisiejszą datę"
+            echo "--logs - tworzenie logów"
+            echo "--logs [x] - tworzenie x liczby logów"
+            exit 0
+            ;;
     esac
     shift
 done
